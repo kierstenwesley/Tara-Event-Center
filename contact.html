@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Tara Event Center in Jonesboro, Georgia to inquire about availability for your next event." />
+  <meta name="theme-color" content="#17120f" />
+  <title>Contact Tara Event Center | Jonesboro, GA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="contact-page">
+  <header class="site-header solid-header">
+    <a class="brand" href="index.html" aria-label="Tara Event Center home">
+      <span class="brand-mark">T</span>
+      <span class="brand-text"><strong>Tara</strong><small>Event Center</small></span>
+    </a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">☰</button>
+    <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+      <a href="index.html#spaces">Our Halls</a>
+      <a href="index.html#gallery">Gallery</a>
+      <a href="index.html#included">What’s Included</a>
+      <a href="contact.html" class="nav-cta">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-hero">
+      <div>
+        <p class="eyebrow">Let’s plan your event</p>
+        <h1>Tell us what you’re celebrating.</h1>
+        <p>Share a few details and we’ll make it easy to continue the conversation about your date, guest count, and hall needs.</p>
+      </div>
+    </section>
+
+    <section class="contact-layout section-pad">
+      <aside class="contact-info-card">
+        <p class="eyebrow">Tara Event Center</p>
+        <h2>We’d love to hear from you.</h2>
+        <div class="contact-detail">
+          <span>Phone</span>
+          <a href="tel:+17708558445">(770) 855-8445</a>
+        </div>
+        <div class="contact-detail">
+          <span>Address</span>
+          <p>7651 Tara Blvd<br />Jonesboro, GA 30236</p>
+        </div>
+        <div class="contact-detail">
+          <span>Rental includes</span>
+          <p>Tables, chairs, security, and an 8-hour event slot.</p>
+        </div>
+        <a class="btn btn-primary full-width" href="tel:+17708558445">Call Now</a>
+        <a class="btn btn-outline full-width" href="https://www.google.com/maps/search/?api=1&query=7651+Tara+Blvd+Jonesboro+GA+30236" target="_blank" rel="noopener">Get Directions</a>
+      </aside>
+
+      <div class="form-card">
+        <div class="form-heading">
+          <p class="eyebrow">Event inquiry</p>
+          <h2>Start with the details.</h2>
+          <p>Submitting this form will open a pre-filled text message to Tara Event Center so you can send your inquiry directly.</p>
+        </div>
+
+        <form id="inquiry-form">
+          <div class="form-row">
+            <label>
+              Full name
+              <input type="text" name="name" autocomplete="name" required placeholder="Your name" />
+            </label>
+            <label>
+              Phone number
+              <input type="tel" name="phone" autocomplete="tel" required placeholder="(404) 555-1234" />
+            </label>
+          </div>
+
+          <div class="form-row">
+            <label>
+              Event date
+              <input type="date" name="date" />
+            </label>
+            <label>
+              Estimated guests
+              <input type="number" name="guests" min="1" max="400" placeholder="Example: 120" />
+            </label>
+          </div>
+
+          <div class="form-row">
+            <label>
+              Hall preference
+              <select name="hall" id="hall-select">
+                <option value="Not sure yet">Not sure yet</option>
+                <option value="Intimate Hall (up to 75)">Intimate Hall — up to 75</option>
+                <option value="Grand Hall (up to 400)">Grand Hall — up to 400</option>
+              </select>
+            </label>
+            <label>
+              Event type
+              <select name="eventType">
+                <option value="Celebration / Party">Celebration / Party</option>
+                <option value="Wedding / Reception">Wedding / Reception</option>
+                <option value="Baby / Bridal Shower">Baby / Bridal Shower</option>
+                <option value="Birthday">Birthday</option>
+                <option value="Banquet / Dinner">Banquet / Dinner</option>
+                <option value="Corporate / Community Event">Corporate / Community Event</option>
+                <option value="Other">Other</option>
+              </select>
+            </label>
+          </div>
+
+          <label>
+            Tell us about your event
+            <textarea name="message" rows="6" placeholder="Theme, preferred time, questions, or anything else you’d like us to know..."></textarea>
+          </label>
+
+          <label class="consent-row">
+            <input type="checkbox" required />
+            <span>I understand this form will open my messaging app so I can send the inquiry to Tara Event Center.</span>
+          </label>
+
+          <button type="submit" class="btn btn-primary submit-btn">Create Text Inquiry</button>
+          <p class="form-note">Prefer to call? <a href="tel:+17708558445">(770) 855-8445</a></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <span class="brand-mark">T</span>
+      <div><strong>Tara Event Center</strong><p>Celebrations made memorable in Jonesboro, GA.</p></div>
+    </div>
+    <div class="footer-contact">
+      <a href="tel:+17708558445">(770) 855-8445</a>
+      <span>7651 Tara Blvd, Jonesboro, GA 30236</span>
+    </div>
+    <p class="copyright">© <span id="year"></span> Tara Event Center. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
